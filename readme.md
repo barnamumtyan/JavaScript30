@@ -12,4 +12,9 @@ What I've learned from each module:
 
 - transform origin css property used for rotation
 
+### 03 - CSS Variables
+
+- new CSS variables that can be updated with javascript
+- data attributes, and using the dataset property from an event to get all the data attributes
+
 
