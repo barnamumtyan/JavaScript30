@@ -7,3 +7,9 @@ What I've learned from each module:
 ### 01 - Javascript Drum Kit
 
 - Adding a 'transitionend' listener instead of a timeout, because timout can get out of synch with the css transition
+
+### 02 - JS and CSS Clock
+
+- transform origin css property used for rotation
+
+
