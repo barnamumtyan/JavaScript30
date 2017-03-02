@@ -17,4 +17,5 @@ What I've learned from each module:
 - new CSS variables that can be updated with javascript
 - data attributes, and using the dataset property from an event to get all the data attributes
 
-
+### 04 - Array Cardio
+- nothing new
