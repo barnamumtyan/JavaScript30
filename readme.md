@@ -17,5 +17,8 @@ What I've learned from each module:
 - new CSS variables that can be updated with javascript
 - data attributes, and using the dataset property from an event to get all the data attributes
 
-### 04 - Array Cardio
+### 04 - Array Cardio Day 1
 - nothing new
+
+### 05 - Flex Panel Gallery
+- learned about flexbox, and event.propertyName.includes function
