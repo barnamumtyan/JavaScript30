@@ -22,3 +22,7 @@ What I've learned from each module:
 
 ### 05 - Flex Panel Gallery
 - learned about flexbox, and event.propertyName.includes function
+
+### 06 - Type Ahead
+- adding an array as innerHtml, uses the join() method and automatically adds commas.
+- the change method of an input only fires when loosing focus, not on every keystroke

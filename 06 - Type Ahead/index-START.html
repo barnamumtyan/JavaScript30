@@ -17,6 +17,39 @@
 <script>
 const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
 
+const places = [];
+const input = document.querySelector('input.search');
+const suggestions = document.querySelector('.suggestions');
+
+fetch(endpoint)
+  .then(blob => blob.json())
+  .then(data => places.push(...data));
+
+input.addEventListener('change', displayMatches);
+input.addEventListener('keyup', displayMatches);
+
+function findMatches(wordToMatch, places) {
+  return places.filter(({state, city}) => {
+    // match for city or state
+    const regex = new RegExp(wordToMatch, 'gi');
+    return city.match(regex) || state.match(regex);
+  });
+}
+
+function displayMatches() {
+  const matchArray = findMatches(this.value, places);
+  const html = matchArray.map(({city, state, population}) => {
+    return `
+      <li>
+        <span class="name">${city}, ${state}</span>
+        <span class="name">${population}</span>
+      </li>
+    `;
+  }).join('');
+  suggestions.innerHTML = html;
+} 
+
+
 </script>
   </body>
 </html>
